@@ -10,10 +10,10 @@ submit.addEventListener('click',()=>{
    //storing the data in objects getting from form
     const data={
         name: document.getElementById("name").value,
-       
+        qualification: document.getElementById("qualification").value,
         email: document.getElementById("email").value,
         websitelink: document.getElementById("websitelink").value,
-        skills: document.getElementById("skills").value
+        skills: document.getElementById("skills").value,
     };
     console.log(data);
 
@@ -25,15 +25,18 @@ submit.addEventListener('click',()=>{
     newlist.innerHTML=`
    
       <div class="NameContainer">${data.name}</div>
-      <a href="mailto:anushaviswanathan55610@ieee.org">${data.email}</a><br>
-      <a href="www.anushaviswanathan.com">${data.websitelink}</a>
+      <div class="QualificationContainer">${data.qualification}</div>
+      <a href="abc@gmail.com">${data.email}</a><br>
       <div class="SkillContainer">${data.skills}</div>
+      <a href="www.projectabc.com">${data.websitelink}</a>
+      
+      
     `
     console.log(newlist);
-    //adding the card one after the other
+    
     output.appendChild(newlist);
    
-    //clearing the input fields after submission
+    
     let input=document.querySelectorAll('input');
     input.forEach(input => {
         input.value = '';
