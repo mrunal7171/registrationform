@@ -12,7 +12,6 @@ submit.addEventListener('click',()=>{
         name: document.getElementById("name").value,
         qualification: document.getElementById("qualification").value,
         email: document.getElementById("email").value,
-        websitelink: document.getElementById("websitelink").value,
         skills: document.getElementById("skills").value,
     };
     console.log(data);
@@ -28,7 +27,7 @@ submit.addEventListener('click',()=>{
       <div class="QualificationContainer">${data.qualification}</div>
       <a href="abc@gmail.com">${data.email}</a><br>
       <div class="SkillContainer">${data.skills}</div>
-      <a href="www.projectabc.com">${data.websitelink}</a>
+      
       
       
     `
